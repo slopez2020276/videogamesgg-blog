@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #E2E2E2;
+    padding: 10px;
+    color: #474747;
+    font-size: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    transition: all .5s;
+}
+
+nav a:hover {
+    color: #000;
+    background-color: #ABABAB;
+}
+
+.nav-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container-1 img{
+    margin-right: 10px;
+    height: 50px;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #ff0000;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+    float: right;
+}
+
+section{
+    padding: 100px 0;
+}
+
+.box-center{
+    margin: auto;
+    width: 80%;
+}
+
+.off-road{
+    position: relative;
+    background-image: url(../img/amnesia-collection.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: grid;
+}
+
+.offroad-text{
+    width: 40%;
+    text-align: center;
+}
+
+.offroad-text p{
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.offroad-text h1, h2{
+    margin: 0 2rem;
+    color: white;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #000000;
+    text-align: center;
+}
+
+.texto-parrafo2{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.catalogo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap ;
+}
+
+.catalogo, h3{
+    color: #000;
+}
+
+.card{
+    width: 30%;
+    height: 300px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.card:nth-child(1){
+    background-image: url(../img/resident-evil-7-biohazard.webp);
+}
+
+.card:nth-child(2){
+    background-image: url(../img/alien-isolation.webp);
+}
+
+.card:nth-child(3){
+    background-image: url(../img/outlast-ii.webp);
+}
+
+.card:nth-child(4){
+    background-image: url(../img/silent-hill-2.webp);
+}
+
+.card:nth-child(5){
+    background-image: url(../img/dead-space.webp);
+}
+
+.card:nth-child(6){
+    background-image: url(../img/amnesia-the-dark-descent.webp);
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.card:hover .card-container{
+    opacity: 1;
+}
+
+.card-tittle{
+    color: #ABABAB;
+    font-size: 2.2rem;
+    font-weight: 400;
+    padding: 10px 0 0 0;
+}
+
+.btn{
+    width: 170px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 25px;
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-card{
+    background-color: #333;
+    color: white;
+    transition: all .5s;
+}
+
+.btn-card:hover{
+    transform: scale(1.1);
+}
+
+
+
+.off-sale{
+    position: relative;
+    background-image: url(../img/juegos-de-xbox-generacionxbox-940x529.jpg.webp);
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+}
+
+.ubi{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-off{
+    width: 170px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 25px;
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #474747;
+    color: white;
+    transition: all 1s;
+}
+
+.btn-off:hover{
+    background-color: transparent;
+}
+
+.overlay, .off-sale::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.off-sale *{
+    position: relative;
+}
+
+.off-sale h1{
+    color: white;
+}
+
+footer{
+    background-color: #000;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.footer-container h3{
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #f3f2f2;
+}
+
+.footer-parrafo{
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 60%;
+}
+
+.icons a{
+    display: flex;
+    background-color: #474747;
+    border-radius: 50%;
+    margin: 5px;
+    color: white;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.icons a:hover{
+    background-color: transparent;
+}
+
+@media (max-width:575px){
+    .checkbtn{
+        display: block;
+    }
+
+    header{
+        width: 100%;
+        position: fixed;
+    }
+
+    .nav-container-1 img{
+        height: 2.5;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        background: #E2E2E2;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    .off-sale *{
+        position: unset;
+    }
+
+    .overlay, .off-sale::before{
+        display: none;
+    }
+
+    .off-sale {
+        position: unset;
+    }
+
+    .off-road{
+        position: unset;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .offroad-text{
+        width: 100%;
+    }
+
+    .offroad-text h1, h2{
+        font-size: 1.5rem;
+    }
+
+    .texto-parrafo{
+        color: #ABABAB;
+    }
+
+    .catalogo-container{
+        display: grid;
+        justify-content: unset;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .texto-parrafo2{
+        text-align: center;
+    }
+
+
+    .footer-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem 0;
+    }
+
+    .footer-container h3{
+        font-size: 1.2rem;
+    }
+
+    .footer-parrafo{
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width:576px) and (max-width:959px){
+
+    .offroad-text{
+        width: 100%;
+    }
+
+    .catalogo-container{
+        display: grid;
+        gap: 3.5rem;
+        justify-content: unset;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .texto-parrafo2{
+        text-align: center;
+    }
+
+    .footer-container h3{
+        font-size: 1.5rem;
+    }
+
+    .footer-parrafo{
+        font-size: 1.2rem;
+    }
+}
+
+
+
